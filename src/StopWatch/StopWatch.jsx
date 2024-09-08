@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './StopWatch.css'
 function StopWatch() {
      const [isRunning, setIsRunning] = useState(false);
@@ -46,7 +46,7 @@ function StopWatch() {
           miliseconds = String(miliseconds).padStart(2, "0");
 
 
-          return `${minutes}:${seconds}:${miliseconds}`;
+          return `${hours}:${minutes}:${seconds}:${miliseconds}`;
      }
 
 

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Clock.css'
+
 function Clock() {
      const [time, setTime] = useState(new Date());
 
@@ -12,8 +13,6 @@ function Clock() {
                clearInterval(intervalId)
           }
      }, []);
-
-
 
      function formatTime() {
           let hours = time.getHours();

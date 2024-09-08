@@ -1,16 +1,14 @@
-import Clock from './MainClock/Clock'
-import StopWatch from './StopWatch/StopWatch'
-import './App.css'
+import NavBar from './Navbar/navbar';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Clock />
-      <br></br>
-      <StopWatch />
-    </>
-  )
-}
+    <div>
 
-export default App
+      <NavBar />
+
+      <h1>Yep Clock Web</h1>
+    </div>
+  );
+};
+
+export default App;
